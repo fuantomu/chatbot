@@ -1,0 +1,6 @@
+.env.local
+chatbot
+__pycache__
+quotes.json
+dictionary.json
+*.log

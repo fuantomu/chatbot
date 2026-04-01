@@ -1,0 +1,4 @@
+{
+    "editor.formatOnSave": true,
+    "flake8.args": ["--ignore=E501"]
+}
