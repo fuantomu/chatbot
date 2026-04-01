@@ -1,0 +1,6 @@
+services:
+  chatbot:
+    image: chatbot:0.1
+    container_name: chatbot-app
+    volumes:
+      - .:/opt/chatbot
