@@ -123,7 +123,7 @@ class ChatClient:
         return await cmd.reply("Quote added to the database")
 
     async def reload_quotes(self, cmd: ChatCommand):
-        QUOTE_DB.load_quotes()
+        QUOTE_DB.quotes = QUOTE_DB.load_quotes()
         return await cmd.reply("Quotes reloaded")
 
     async def entry_command(self, cmd: ChatCommand):
@@ -161,5 +161,5 @@ class ChatClient:
         )
 
     async def reload_entries(self, cmd: ChatCommand):
-        DICTIONARY_DB.load_entries()
+        DICTIONARY_DB.entries = DICTIONARY_DB.load_entries()
         return await cmd.reply("Dictionemsy entries reloaded")
